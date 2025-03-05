@@ -5,40 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicenzo Visionary</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset */
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
         header {
-            background-color: #333;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
             color: white;
             padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2a5298;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?education,technology') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
             font-size: 24px;
-        }
-        section {
-            margin: 20px;
+            font-weight: bold;
             padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Section */
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            text-align: left;
+            margin: 10px 30px;
+        }
+
+        /* Footer */
         footer {
             margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
+            padding: 15px;
+            background: #1e3c72;
             color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+
     <header>Vicenzo Visionary</header>
-    <section>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#tips">Tips Belajar</a>
+        <a href="#tech">Teknologi</a>
+        <a href="#motivation">Motivasi</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="hero">
+        Belajar dengan benar, rajin, dan selalu berusaha
+    </div>
+
+    <section id="home">
         <h1>Selamat Datang di Vicenzo Visionary</h1>
-        <p>Website ini didedikasikan untuk perjalanan dan visi masa depan dalam dunia teknologi dan kedokteran.</p>
+        <p>Website ini didedikasikan untuk memberikan informasi umum, terutama bagi pelajar, dengan tampilan yang menarik dan informatif.</p>
     </section>
-    <footer>&copy; 2025 Vicenzo Visionary. All rights reserved.</footer>
+
+    <section id="about">
+        <h1>Tentang Kami</h1>
+        <p>Vicenzo Visionary adalah platform yang menyediakan informasi seputar dunia pendidikan, teknologi, dan kedokteran. Kami percaya bahwa belajar dengan benar, rajin, dan selalu berusaha akan membawa kesuksesan.</p>
+    </section>
+
+    <section id="tips">
+        <h1>📌 5 Tips Belajar Efektif</h1>
+        <ul>
+            <li><b>Buat Jadwal Belajar</b> – Tetapkan waktu belajar tetap tiap hari supaya lebih disiplin.</li>
+            <li><b>Gunakan Teknik Pomodoro</b> – Belajar 25 menit, istirahat 5 menit untuk tingkatkan fokus.</li>
+            <li><b>Catat Poin Penting</b> – Gunakan mind map atau highlight buku agar lebih mudah diingat.</li>
+            <li><b>Praktikkan Soal Latihan</b> – Jangan cuma baca, coba latihan soal biar makin paham.</li>
+            <li><b>Tidur & Makan yang Cukup</b> – Jangan begadang! Otak butuh istirahat untuk memproses informasi.</li>
+        </ul>
+    </section>
+
+    <section id="tech">
+        <h1>🔬 Teknologi Masa Depan yang Wajib Kamu Ketahui!</h1>
+        <ul>
+            <li><b>Kecerdasan Buatan (AI)</b> – Teknologi yang membuat komputer bisa berpikir seperti manusia.</li>
+            <li><b>Metaverse</b> – Dunia virtual yang bisa digunakan buat belajar, kerja, dan bersosialisasi.</li>
+            <li><b>Robotika dalam Kedokteran</b> – Robot sekarang sudah bisa membantu operasi medis dan diagnosis penyakit!</li>
+            <li><b>Energi Terbarukan</b> – Teknologi solar panel dan baterai semakin canggih untuk masa depan yang lebih hijau.</li>
+        </ul>
+    </section>
+
+    <section id="motivation">
+        <h1>🔥 Motivasi & Inspirasi</h1>
+        <p>"Kesuksesan bukan tentang siapa yang paling pintar, tapi siapa yang paling tekun dan terus berusaha!"</p>
+        <h3>Kisah Sukses Anak Muda:</h3>
+        <ul>
+            <li><b>Elon Musk</b> – Dulu sering dibully, tapi sekarang jadi pengusaha teknologi sukses!</li>
+            <li><b>B.J. Habibie</b> – Dari Indonesia, jadi ilmuwan pesawat terkenal di dunia.</li>
+            <li><b>Dr. William Tan</b> – Seorang dokter dan atlet difabel yang tetap berjuang tanpa menyerah.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h1>Hubungi Kami</h1>
+        <p>Email: <a href="mailto:fikrihaesulla@gmail.com">fikrihaesulla@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/fikri_haesulla" target="_blank">@fikri_haesulla</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Vicenzo Visionary. All rights reserved.
+    </footer>
+
 </body>
 </html>
